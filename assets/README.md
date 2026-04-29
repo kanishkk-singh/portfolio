@@ -14,12 +14,12 @@
 - Browser mein apna project kholo → F12 → Screenshot tool use karo
 
 ## 📄 CV/Resume PDF
-- File name: `Kanishk_Kumar_Singh_CV.pdf`
+- File name: `Kanishk_Kumar_Singh.pdf`
 - Jab bhi CV update karo, sirf yeh file replace karo
 - DOWNLOAD_CV.PDF button automatically kaam karega
 
 ## Quick Steps:
 1. Apni photo → assets/avatar.jpg
 2. Project screenshots → assets/skillswap.png etc
-3. CV PDF → assets/Kanishk_Kumar_Singh_CV.pdf
+3. CV PDF → assets/Kanishk_Kumar_Singh.pdf
 4. Done! Portfolio mein sab automatically show hoga.
