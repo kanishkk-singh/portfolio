@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>KANISHK_KUMAR_SINGH :: FRONTEND_DEV</title>
+<title>KANISHK_KUMAR_SINGH :: FULLSTACK DEV</title>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet"/>
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <style>
@@ -191,18 +191,18 @@ body.ch #cur::before { background: var(--green); }
   gap: 10px;
 }
 .status-avatar {
-  width: 60px; height: 75px;
+  width: 80px; height: 80px;
   border: 2px solid var(--border2);
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
   image-rendering: pixelated;
 }
-.status-avatar img {
-  width: 100%; height: 100%;
+.status-avatar video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  image-rendering: auto;
 }
 /* fallback if no image */
 .status-avatar-fallback {
@@ -640,7 +640,7 @@ body.ch #cur::before { background: var(--green); }
   position: fixed;
   bottom: 0; left: 0; right: 0;
   height: var(--bar-h);
-  background: #2d5c1c;  /* exact dark forest green from screenshot */
+  background: #2d5c1c;  
   display: flex;
   align-items: center;
   padding: 0 12px;
@@ -721,7 +721,7 @@ body.ch #cur::before { background: var(--green); }
   #statusbar { display: none; }
 }
 /* ── WORKS GALLERY ─────────────────────────────────────────── */
-/* Gallery is a FULL OVERLAY — covers everything like the video */
+
 #gallery-view {
   position: fixed;
   inset: 0;
@@ -904,7 +904,7 @@ body.ch #cur::before { background: var(--green); }
   letter-spacing: .04em;
 }
 
-/* ── THUMBNAIL STRIP — fanned card style like video ──────── */
+/* ── THUMBNAIL STRIP  ──────── */
 .lb-strip-wrap {
   height: 130px;
   flex-shrink: 0;
@@ -1017,22 +1017,24 @@ body.ch #cur::before { background: var(--green); }
       <div class="status-box">
         <div class="status-row">
           <div class="status-avatar">
-            <!--
-              APNI PHOTO LAGANE KE LIYE:
-              1. Apni photo ko assets/avatar.jpg mein save karo
-              2. Neeche wali img tag ka src badlo: src="assets/avatar.jpg"
-              3. Fallback div hata do
-            -->
-            <img
-              src="assets/avatar.jpg"
-              alt="Kanishk Kumar Singh"
-              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-            />
-            <div class="status-avatar-fallback" style="display:none;">K</div>
-          </div>
+
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+  >
+    <source src="assets/avatar.mp4" type="video/mp4">
+  </video>
+
+  <div class="status-avatar-fallback" style="display:none;">K</div>
+
+</div>
           <div class="status-info">
             <div class="status-name">ACTIVE_READY</div>
-            <div class="status-line">FOCUS_MODE: <span>FRONTEND_DEV</span></div>
+            <div class="status-line">FOCUS_MODE: <span>FULLSTACK_DEV</span></div>
             <div class="status-line">LOCATION: <span>INDIA</span></div>
             <div class="status-line">READY_FOR_NEXT_BUILD.</div>
           </div>
@@ -1155,8 +1157,8 @@ body.ch #cur::before { background: var(--green); }
           <div class="proj-main">
             <div class="proj-name">./skillswap<span class="ext">.sh</span></div>
             <div class="proj-meta">
-              <span>TYPE: <span class="tag-label">FRONTEND_DEV</span></span>
-              <span>TAGS: <span class="tags">REACT,TAILWIND,REST_API,AUTH</span></span>
+              <span>TYPE: <span class="tag-label">FULLSTACK_DEV</span></span>
+              <span>TAGS: <span class="tags">React.js, Node.js, Express.js, MongoDB, JWT, bcrypt, Axios, Vercel</span></span>
               <span class="ts">TIMESTAMP: 2025</span>
             </div>
             <div class="proj-desc">A peer-to-peer skill exchange platform — teach what you know, learn what you don't. Features user auth, profiles, skill listing & matching system.</div>
@@ -1182,8 +1184,8 @@ body.ch #cur::before { background: var(--green); }
           <div class="proj-main">
             <div class="proj-name">./deadlinedock<span class="ext">.sh</span></div>
             <div class="proj-meta">
-              <span>TYPE: <span class="tag-label">FRONTEND_DEV</span></span>
-              <span>TAGS: <span class="tags">JS,HTML,CSS,LOCALSTORAGE</span></span>
+              <span>TYPE: <span class="tag-label">FULLSTACK_DEV</span></span>
+              <span>TAGS: <span class="tags">Node.js, Express.js, JWT, Chart.js, FullCalendar, JavaScript, Render</span></span>
               <span class="ts">TIMESTAMP: 2025</span>
             </div>
             <div class="proj-desc">Task & deadline manager for students and devs. Priority tagging, smart deadline tracking, and a clean UI to stay on top of what matters.</div>
@@ -1209,8 +1211,8 @@ body.ch #cur::before { background: var(--green); }
           <div class="proj-main">
             <div class="proj-name">./sidebyside<span class="ext">.sh</span></div>
             <div class="proj-meta">
-              <span>TYPE: <span class="tag-label">FRONTEND_DEV</span></span>
-              <span>TAGS: <span class="tags">REACT,CSS_GRID,RESPONSIVE</span></span>
+              <span>TYPE: <span class="tag-label">FULLSTACK_DEV</span></span>
+              <span>TAGS: <span class="tags">React.js, Node.js, Express.js, MongoDB, JWT, Vite, Vercel</span></span>
               <span class="ts">TIMESTAMP: 2026</span>
             </div>
             <div class="proj-desc">A focused comparison tool to view two items side-by-side with clarity — perfect for technologies, products, or anything worth comparing.</div>
@@ -1227,22 +1229,30 @@ body.ch #cur::before { background: var(--green); }
 
         <hr class="sec-divider"/>
 
-        <!-- WIP 04 -->
+        <!-- Project 04 — hcp-crm -->
         <div class="proj-row wip anim" style="animation-delay:.4s">
-          <div class="proj-num" style="opacity:.5">04</div>
+          <div class="proj-num">04</div>
+          <div class="proj-thumb">
+            <img src="assets/hcp-crm_favicon.png" alt="HCP-CRM"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+             <div class="proj-thumb-fallback proj-thumb-sbs" style="display:none;">SB</div>
+          </div>
           <div class="proj-main">
-            <div class="proj-name">[LOCKED] Next_Project<span class="ext">.sh</span></div>
+            <div class="proj-name">./HCP-CRM<span class="ext">.sh</span></div>
             <div class="proj-meta">
-              <span>TYPE: <span class="tag-label">FRONTEND_DEV</span></span>
-              <span>TAGS: <span class="tags">REACT,TBD</span></span>
+              <span>TYPE: <span class="tag-label">FULLSTACK_AI_DEV</span></span>
+              <span>TAGS: <span class="tags">React.js, Redux, Python, FastAPI, LangGraph, Groq, PostgreSQL, SQLAlchemy</span></span>
               <span class="ts">TIMESTAMP: 2026</span>
             </div>
-            <div class="proj-coming">COMING_SOON</div>
+            <div class="proj-desc">An AI-first CRM module for logging HCP (doctor) interactions — via structured form or natural-language chat. Features a LangGraph agent with 5 tools for logging, editing, history lookup, follow-ups & AI summaries.</div>
+             <div class="proj-links-row">
+              <a href="https://github.com/kanishkk-singh/hcp-crm" target="_blank" class="proj-link gh">◎ GITHUB_REPO</a>
+            </div>
           </div>
           <div class="proj-status">
-            <div class="status-badge wip">[BUILDING]</div>
-            <div class="version-badge" style="color:var(--orange);">IN_PROGRESS_V1.0</div>
-            <div class="wip-badge">WIP</div>
+            <div class="status-badge success">[SUCCESS] COMPLETED_V1.0</div>
+            <div class="version-badge" >BUILD: SUCCESSFUL</div>
+            
           </div>
         </div>
 
@@ -1261,10 +1271,10 @@ body.ch #cur::before { background: var(--green); }
             <div class="ab-title">// SYSTEM_INFO</div>
             <div class="ab-content">
               NAME: <strong>Kanishk Kumar Singh</strong><br/>
-              ROLE: <span class="hl">Frontend Developer</span><br/>
+              ROLE: <span class="hl">Fullstack Developer</span><br/>
               LOCATION: <strong>INDIA</strong><br/>
               STATUS: <span class="hl">Open to Opportunities</span><br/><br/>
-              A Computer Science graduate and frontend developer focused on building <strong>fast, responsive, and user-centric</strong> web applications. Strong foundation in modern UI practices, performance, and clean architecture — with a focus on real-world problem solving.<br/><br/>
+              A Computer Science graduate and fullstack developer focused on building <strong>fast, responsive, and user-centric</strong> web applications. Strong foundation in modern UI practices, performance, and clean architecture — with a focus on real-world problem solving.<br/><br/>
               Believes <strong>details define quality</strong> — from micro-interactions to overall experience, every detail matters.
             </div>
           </div>
@@ -1506,7 +1516,7 @@ body.ch #cur::before { background: var(--green); }
   <div class="sb-sep">|</div>
   <div class="sb-item">FOCUS: <span id="sb-focus">PROJECT_LIST</span></div>
   <div class="sb-sep">|</div>
-  <div class="sb-item">BUILD: <span>FRONTEND_V1.0</span></div>
+  <div class="sb-item">BUILD: <span>FULLSTACK_V1.0</span></div>
   <div class="sb-right">
     <div class="sb-item">LNS: <span>∞</span></div>
     <div class="sb-item">ENC: <span>UTF-8</span></div>
